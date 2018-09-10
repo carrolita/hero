@@ -1,0 +1,118 @@
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  height: 48px;
+  text-align: center;
+}
+
+.navbar>a {
+  line-height: 48px;
+  margin-right: 16px;
+  margin-left: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar>a:active {
+  color: #FF1493;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.video>video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+
+.video-small {
+  display: none;
+}
+
+.video-medium {
+  display: none;
+}
+
+.video-large {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .video-large {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .video-medium {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-small {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Chango';
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: #f1f1f1;
+  width: 50%;
+}
+
+.content>span {
+  font-size: 200%;
+}
+
+@media (min-width: 900px) {
+  .content>span {
+    font-size: 200%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .content>span {
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content>span {
+    font-size: 100%;
+  }
+}
